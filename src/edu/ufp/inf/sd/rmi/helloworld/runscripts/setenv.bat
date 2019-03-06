@@ -12,10 +12,10 @@
 
 @REM ======================== CHANGE BELOW ACCORDING YOUR PROJECT and PC SETTINGS ========================
 @REM ==== PC STUFF ====
-@Set USERNAME=Nuno
+@Set USERNAME=nunoalfhotmail.com
 
 @Set WORKDRIVE=C
-@Set JDK=%WORKDRIVE%:\Program Files\Java\jdk1.8.0_191
+@Set JDK=%WORKDRIVE%:\Program Files\Java\jdk1.8.0_111
 @REM These vars will be used to check the output folder (whereto classes are generated)
 @SET NETBEANS=NetBeans
 @SET INTELLIJ=IntelliJ
