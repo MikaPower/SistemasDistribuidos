@@ -260,7 +260,6 @@ private void jMenuItemSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN
      */
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
-
             @Override
             public void run() {
                 if (args.length>=3){
