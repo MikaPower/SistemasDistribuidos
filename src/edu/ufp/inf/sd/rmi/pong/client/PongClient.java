@@ -66,7 +66,7 @@ public class  PongClient {
     
     private void playService() {
         try {
-            this.myRI.methodName();
+            this.myRI.ping();
         } catch (RemoteException ex) {
             Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, null, ex);
         }

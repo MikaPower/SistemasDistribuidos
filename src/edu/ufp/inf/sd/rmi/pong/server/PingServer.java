@@ -34,6 +34,7 @@ public class PingServer {
         String serviceAddress = "rmi://" + registryIP + ":" + registryPort + "/PingPongService";
         PingImpl test = null;
         try {
+
             test = new PingImpl(playerID, registryIP, registryPort);
         } catch (RemoteException e) {
             e.printStackTrace();
@@ -43,6 +44,10 @@ public class PingServer {
             e.printStackTrace();
         }
         try {
+
+            //Binding a name for a remote object is associating or
+            // registering a name for a remote object that can be used at a later time to look up that remote object.
+            // A remote object can be associated with a name using the Naming class's bind or rebind methods
             Naming.bind(serviceAddress, test);
         } catch (AlreadyBoundException e) {
             e.printStackTrace();

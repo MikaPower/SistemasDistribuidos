@@ -75,7 +75,7 @@ public class HelloWorldActivatableImpl extends Activatable implements HelloWorld
     private int persistData(int value) throws IOException {
         raf.setLength(0);
         raf.writeInt(value);
-        return value;
+        return value    ;
     }
 
     public void print(String msg) throws RemoteException {

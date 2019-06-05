@@ -17,7 +17,7 @@ public class PingImpl extends UnicastRemoteObject implements PingRI {
         Random generator = new Random();
         int playErr = Math.abs(generator.nextInt(99) + 1);
         if (playErr > 5) {
-            pongRI.pong(ball);
+            pongRI.pong(b);
         }
     }
 }
